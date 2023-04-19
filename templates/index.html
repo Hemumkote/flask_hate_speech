@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hate Speech Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form method="POST" action="/">
+        <label for="sentence">Enter a sentence:</label>
+        <input type="text" id="sentence" name="user_input" placeholder="Enter Here" required>
+        <input type="submit" value="Predict">
+    </form>
+    <div id=result>
+<p class="result"><h1>{{prediction_result}}</h1></p>
+    </div>
+</body>
+</html>
